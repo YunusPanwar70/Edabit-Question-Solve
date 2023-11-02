@@ -1,5 +1,9 @@
 function sumOfCubes(arr) {
-
+    let sum = 0;
+    for (const num of arr) {
+        sum += Math.pow(num, 3)
+    }
+    return sum;
 }
 
 console.log(sumOfCubes([1, 5, 9]));
@@ -8,7 +12,6 @@ console.log(sumOfCubes([2]));
 console.log(sumOfCubes([]));
 
 
-// Create a function that takes in an array of numbers and returns the sum of its cubes.
 
 // ➞ 855
 // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855

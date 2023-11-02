@@ -1,7 +1,6 @@
 function sortByLength(arr) {
-    arr.sort((a, b) => a.length - b.length)
-    return arr
-}
+    return arr.sort();
+};
 
 console.log(sortByLength(["a", "ccc", "dddd", "bb"]));
 console.log(sortByLength(["apple", "pie", "shortcake"]));
