@@ -1,5 +1,10 @@
 function findIndex(arr, str) {
-    return arr.indexOf(str);
+    // return arr.indexOf(str);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === str) {
+            return i
+        }
+    }
 };
 
 console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
