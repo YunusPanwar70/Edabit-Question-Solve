@@ -1,5 +1,5 @@
-function futurePeople(poplation, n) {
-
+function futurePeople(population, n) {
+	return population + (3*10*12*n)
 }
 
 console.log(futurePeople(256, 2));
