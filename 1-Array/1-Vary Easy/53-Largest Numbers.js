@@ -1,7 +1,8 @@
 function largestNumbers(num, arr) {
     // return num.sort((a, b) => a - b)
     arr.sort((a, b) => b - a);
-    return arr.slice(0, num)
+    let a = arr.slice(0, num)
+    return a.reverse()
 }
 console.log(largestNumbers(2, [4, 3, 2, 1]));
 console.log(largestNumbers(1, [7, 19, 4, 2]));

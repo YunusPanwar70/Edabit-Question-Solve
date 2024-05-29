@@ -1,7 +1,7 @@
 function findFactors(num) {
     // return num.map((item) => item.length % 2)
     let result = [];
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i <=num; i++) {
         if (num % i === 0) {
             result.push(i)
         }
