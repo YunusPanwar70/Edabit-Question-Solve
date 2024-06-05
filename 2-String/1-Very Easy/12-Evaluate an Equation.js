@@ -1,4 +1,5 @@
 // Create a function that evaluates an equation.
+
 function eq(str) {
     return eval(str)
 }

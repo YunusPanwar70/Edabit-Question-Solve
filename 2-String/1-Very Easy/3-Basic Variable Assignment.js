@@ -3,9 +3,10 @@
 // function nameString(str) {
 //     return `${str}Edabit`
 // }
+
 function nameString(str) {
-    let a = 'Edabit';
-    return str.concat(a)
+    let fisrtWord = 'Edabit';
+    return str.concat(fisrtWord)
 }
 console.log(nameString("Mubashir"));
 console.log(nameString("Matt"));

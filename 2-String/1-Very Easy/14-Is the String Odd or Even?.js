@@ -1,4 +1,5 @@
 // Given a string, return true if its length is even or false if the length is odd.
+
 function oddOrEven(str) {
     if (str.length % 2 === 0) {
         return true

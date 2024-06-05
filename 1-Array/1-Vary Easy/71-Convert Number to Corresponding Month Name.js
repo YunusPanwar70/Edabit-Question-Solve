@@ -25,7 +25,7 @@ function monthName(num) {
         case 12:
             return 'December'
         default:
-            return 'Enter valid month'
+            return 'Please enter valid month'
     }
 }
 console.log(monthName(3));
@@ -33,4 +33,4 @@ console.log(monthName(12));
 console.log(monthName(6));
 // ➞ "March"
 // ➞ "December"
-// ➞ "June"/
+// ➞ "June"

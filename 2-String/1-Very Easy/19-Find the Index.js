@@ -1,7 +1,9 @@
 // Create a function that takes an array and a string as arguments and returns the index of the string.
+
 // function findIndex(arr,num) {
 //     return arr.indexOf(num)
 // }
+
 function findIndex(arr, num) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === num) {
