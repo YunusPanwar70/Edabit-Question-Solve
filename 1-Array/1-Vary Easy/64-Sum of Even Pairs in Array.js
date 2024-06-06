@@ -1,5 +1,16 @@
+// function oddSum(arr) {
+//     return arr.map((item) => item % 2 ? true : false)
+// }
 function oddSum(arr) {
-    return arr.map((item) => item % 2 ? true: false)
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            result.push(true)
+        } else {
+            result.push(false)
+        }
+    }
+    return result
 }
 console.log(oddSum([11, 15, 6, 8, 9, 10]));
 console.log(oddSum([12, 21, 5, 9, 65, 32]));

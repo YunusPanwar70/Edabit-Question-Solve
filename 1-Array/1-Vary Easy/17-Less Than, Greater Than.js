@@ -1,5 +1,8 @@
+// function arrBetween(arr) {
+// return arr.filter((item) => item > num1 && item < num2)
+// }
+
 function arrBetween(num1, num2, arr) {
-    // return arr.filter((item) => item > num1 && item < num2)
     let result = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > num1 && arr[i] < num2) {

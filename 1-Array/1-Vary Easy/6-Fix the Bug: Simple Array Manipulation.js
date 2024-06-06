@@ -1,10 +1,14 @@
-function incrementItems(arr) {
-    // return arr.map((item) => item + 1);
-    // for (let i = 0; i < arr.length; i++) {
-    //     arr[i] = arr[i] + 1
-    // }
-    // return arr
-};
+// function incrementItems(arr) {
+//     return arr.map((item) => item + 1);
+// }
+
+// function incrementItems(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i] + 1
+//     }
+//     return arr
+// };
+
 function incrementItems(arr) {
     return arr.reduce((acc, val) => {
         acc.push(val + 1)
