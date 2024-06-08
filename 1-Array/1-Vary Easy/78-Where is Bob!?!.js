@@ -1,14 +1,14 @@
 function findBob(arr) {
-    let bobs = 'Bob';
+    // let bobs = 'Bob';
     // return arr.indexOf(bobs);
 
-    // let bob = -1;
-    // arr.forEach((name, index) => {
-    //     if (name === 'Bob') {
-    //         bob = index
-    //     }
-    // });
-    // return bob;
+    let bob = -1;
+    arr.forEach((name, index) => {
+        if (name === 'Bob') {
+            bob = index
+        }
+    });
+    return bob;
 }
 console.log(findBob(["Jimmy", "Layla", "Bob"]));
 console.log(findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]));

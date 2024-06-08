@@ -3,13 +3,21 @@
 
 // The default character(hash #) repeating n times(if no proc is given).
 // The character passed in through the proc repeating n times.
+// function makeRug(m, n, s = '#') {
+//     const result = [];
+//     const row = s.repeat(n)
+//     for (let i = 0; i < m; i++) {
+//         result.push(row)
+//     }
+//     return row
+// }
+
 function makeRug(m, n, s = '#') {
-    const result = [];
-    const row = s.repeat(n)
+    let rug = [];
     for (let i = 0; i < m; i++) {
-        result.push(row)
+        rug.push(s.repeat(n))
     }
-    return row
+    return rug
 }
 console.log(makeRug(3, 5));
 console.log(makeRug(3, 5, '$'));

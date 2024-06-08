@@ -13,9 +13,10 @@
 var array = [1, 2, 3];
 
 function fill(arr, value, start = 0, end = arr.length) {
-    for (let i = start; i < end; i++) { 
-     
-    }    
+    for (let i = start; i < end; i++) {
+        arr[i] = value
+    }
+    return arr
 }
 console.log(fill(array, "a"));
 console.log(fill(Array(3), 2));

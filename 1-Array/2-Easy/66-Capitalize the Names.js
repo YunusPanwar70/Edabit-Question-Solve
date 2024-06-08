@@ -1,6 +1,6 @@
 // Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
 function capMe(arr) {
-
+    return arr.map((item) => item.charAt(0).toUpperCase())
 }
 console.log(capMe(["mavis", "senaida", "letty"]));
 console.log(capMe(["samuel", "MABELLE", "letitia", "meridith"]));
