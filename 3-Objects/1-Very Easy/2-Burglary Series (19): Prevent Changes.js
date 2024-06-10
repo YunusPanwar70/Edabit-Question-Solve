@@ -5,14 +5,16 @@
 
 const obj = { noChanges: true }
 
-// preventChanges(obj) {
-//     // Write your code here, don't use a return statement
+function preventChanges(obj) {
+    Object.freeze(obj)
+    // Write your code here, don't use a return statement
+    obj.noChanges = false;
+    obj.signature = "whatever"
+    return obj;
+}
 
-//     obj.noChanges = false;
-//     obj.signature = "whatever"
-//     return obj;
-
-// }
+console.log(preventChanges(obj));
 // ➞ { noChanges: true }
 
-console.log(obj.noChanges);
+// obj.signature = "whatever";
+// console.log(obj);

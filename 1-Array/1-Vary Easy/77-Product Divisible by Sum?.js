@@ -1,16 +1,16 @@
 // function divisible(arr) {
-//     return arr.reduce((item, val) => item % val ? true : false)
+//     const sum = arr.reduce((acc, cur) => acc * cur)
+//     const total = arr.reduce((acc, cur) => acc + cur)
+//     return sum % total === 0;
 // }
 function divisible(arr) {
-    let result = [];
+    let sum = 1;
+    let total = 0;
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % arr[i]) {
-            result.push(true)
-        } else {
-            result.push(false)
-        }
+        sum *= arr[i]
+        total += arr[i]
     }
-    return result
+    return sum % total === 0
 }
 console.log(divisible([3, 2, 4, 2]));
 console.log(divisible([4, 2, 6]));

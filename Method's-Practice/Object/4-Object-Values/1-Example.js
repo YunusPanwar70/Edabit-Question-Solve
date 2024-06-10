@@ -12,3 +12,4 @@ const obj = {
 var arr = Object.entries(obj)
 // console.log(arr);
 console.log(arr[0][1]); // nested indexing
+
