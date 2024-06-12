@@ -10,8 +10,16 @@
 //     return count
 // }
 
+// function countTrue(arr) {
+//     return arr.filter((item) => item === true).length
+// }
+
 function countTrue(arr) {
-    return arr.filter((item) => item === true).length
+    let count = 0;
+    while (arr <= true) {
+        count++
+    }
+    return count
 }
 console.log(countTrue([true, false, false, true, false]));
 console.log(countTrue([false, false, false, false]));
