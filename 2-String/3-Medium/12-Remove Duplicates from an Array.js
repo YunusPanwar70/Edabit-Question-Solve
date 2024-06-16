@@ -3,8 +3,19 @@
 // function removeDups(arr) {
 //     return [...new Set(arr)]
 // }
+
+// function removeDups(arr) {
+//     return arr.filter((item, index) => arr.indexOf(item) === index);
+// }
+
 function removeDups(arr) {
-    return arr.filter((item, index) => arr.indexOf(item) === index);
+    let uniqueArr = [];
+    for (let item of arr) {
+        if (!uniqueArr.includes(item)) {
+            uniqueArr.push(item)
+        }
+    }
+    return uniqueArr
 }
 console.log(removeDups([1, 0, 1, 0]));
 console.log(removeDups(["The", "big", "cat"]));

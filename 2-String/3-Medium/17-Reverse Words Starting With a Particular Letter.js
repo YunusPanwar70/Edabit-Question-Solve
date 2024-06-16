@@ -1,7 +1,7 @@
 // Write a function that reverses all the words in a sentence that start with a particular letter.
 
-function specialReverse(str) {
-    
+function specialReverse(str, char) {
+    return str.split(' ').map((item) => item.includes(char) ? item.split('').reverse().join('') : item).join(' ')
 }
 console.log(specialReverse("word searches are super fun", "s"));
 console.log(specialReverse("first man to walk on the moon", "m"));

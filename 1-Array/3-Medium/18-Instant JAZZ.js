@@ -1,7 +1,16 @@
 // Create a function which concatenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
 
 function jazzify(arr) {
-    return arr.map((item) => item.endsWith('7') ? item : item + '7')
+    // return arr.map((item) => item.endsWith('7') ? item : item + '7')
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].endsWith('7')) {
+            result.push(arr[i])
+        } else {
+            result.push(arr[i] + '7')
+        }
+    }
+    return result
 }
 console.log(jazzify(["G", "F", "C"]));
 console.log(jazzify(["Dm", "G", "E", "A"]));

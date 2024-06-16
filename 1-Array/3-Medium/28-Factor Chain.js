@@ -9,12 +9,12 @@
 // Create a function that determines whether or not an array is a factor chain.
 
 function factorChain(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i + 1]) {
-            return true
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i + 1] % arr[i] !== 0) {
+            return false
         }
     }
-    return false
+    return true
 }
 console.log(factorChain([1, 2, 4, 8, 16, 32]));
 console.log(factorChain([1, 1, 1, 1, 1, 1]));

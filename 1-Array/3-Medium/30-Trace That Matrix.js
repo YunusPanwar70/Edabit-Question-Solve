@@ -11,7 +11,13 @@
 // ... the trace is 1 + 5 + 9 = 15.
 
 // Write a function that takes a square matrix and computes its trace.
-
+function trace(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i][i]
+    }
+    return sum
+}
 console.log(trace([
     [1, 4],
     [4, 1]

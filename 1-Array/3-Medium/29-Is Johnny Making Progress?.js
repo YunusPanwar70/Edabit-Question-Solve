@@ -3,7 +3,13 @@
 // Create a function that takes in an array of miles run every Saturday and returns Johnny's total number of progress days.
 
 function progressDays(arr) {
-    
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[i - 1]) {
+            count++
+        }
+    }
+    return count
 }
 console.log(progressDays([3, 4, 1, 2]));
 console.log(progressDays([10, 11, 12, 9, 10]));

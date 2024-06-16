@@ -1,5 +1,9 @@
 // Return the sum of all items in an array, where each item is multiplied by its index (zero-based). For empty arrays, return 0.
 
+// function indexMultiplier(arr) {
+//     return arr.reduce((acc, val, index) => acc + val * index, 0)
+// }
+
 function indexMultiplier(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {

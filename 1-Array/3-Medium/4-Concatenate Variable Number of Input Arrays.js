@@ -6,6 +6,7 @@
 // function concat(...arr) {
 //     return arr.reduce((acc, current) => acc.concat(current), [])
 // }
+
 function concat(...arr) {
     const result = [];
     arr.forEach(subArray => result.push(...subArray))

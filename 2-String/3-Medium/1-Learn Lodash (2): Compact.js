@@ -2,8 +2,22 @@
 
 // Your task is to build this helper function without using lodash. You will write a function that receives an array and removes all falsey values.
 
+// function compact(arr) {
+//     return arr.filter((item) => Number(item))
+// }
+
+// function compact(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]) {
+//             result.push(arr[i])
+//         }
+//     }
+//     return result
+// }
+
 function compact(arr) {
-    return arr.filter((item) => Number(item))
+    return arr.filter(Boolean);
 }
 console.log(compact([0, 1, false, 2, "", 3]));
 // => [1, 2, 3]
