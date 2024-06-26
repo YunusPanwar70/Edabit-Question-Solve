@@ -7,7 +7,14 @@
 // "user1, user2 and 3 more online"
 
 function chatroomStatus(arr) {
-    
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == []) {
+            return 'no one online'
+        }
+        else {
+            return arr[i] + ' online'
+        }
+    }
 };
 console.log(chatroomStatus([]));
 console.log(chatroomStatus(["paRIE_to"]));
