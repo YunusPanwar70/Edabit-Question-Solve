@@ -3,8 +3,8 @@
 //     return flag.toString()
 // }
 function boolToString(flag) {
-    if (typeof(flag) === "boolean") {
-        return String(flag)
+    if (typeof (flag) === "boolean") {
+        return `"${String(flag)}"`
     }
 }
 console.log(boolToString(true));

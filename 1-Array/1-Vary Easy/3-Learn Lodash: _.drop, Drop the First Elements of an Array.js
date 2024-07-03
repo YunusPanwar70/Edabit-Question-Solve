@@ -1,9 +1,11 @@
 // function drop(arr, num) {
 //     return arr.slice(num)
 // }
+
 // function drop(arr, num) {
 //     return arr.splice(num);
 // }
+
 function drop(arr, num) {
     let result = []
     for (let i = num; i < arr.length; i++) {

@@ -1,7 +1,17 @@
+// function countdown(arr) {
+//     let result = [];
+//     for (let i = 0; i <= arr; i++) {
+//         result.push(i);
+//     }
+//     return result
+// }
+
 function countdown(arr) {
     let result = [];
-    for (let i = 0; i <= arr; i++) {
-        result.push(i);
+    let i = arr;
+    while (i >= 0) {
+        result.push(i)
+        i--;
     }
     return result
 }

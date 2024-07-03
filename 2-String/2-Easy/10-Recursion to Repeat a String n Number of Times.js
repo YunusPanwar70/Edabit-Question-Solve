@@ -9,9 +9,19 @@
 //     return result;
 // }
 
-function repetition(str, n) {
-    return str.repeat(n)
-}
+// function repetition(str, n) {
+//     return str.repeat(n)
+// }
+
+// function repetition(str, n) {
+//     let result = '';
+//     let i = 0;
+//     while (i < n) {
+//         result += str
+//         i++
+//     }
+//     return result
+// }
 console.log(repetition("ab", 3));
 console.log(repetition("kiwi", 1));
 console.log(repetition("cherry", 2));

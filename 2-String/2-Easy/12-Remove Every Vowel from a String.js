@@ -1,12 +1,25 @@
 // Create a function that takes a string and returns a new string with all vowels removed.
 
+// function removeVowels(str) {
+//     const vowels = 'aeiouAEIOU';
+//     let result = '';
+//     for (let i = 0; i < str.length; i++) {
+//         if (!vowels.includes(str[i])) {
+//             result += str[i]
+//         }
+//     }
+//     return result
+// }
+
 function removeVowels(str) {
-    const vowels = 'aeiouAEIOU';
+    let vowels = 'aeiouAEIOU';
     let result = '';
-    for (let i = 0; i < str.length; i++) {
+    let i = 0;
+    while (i < str.length) {
         if (!vowels.includes(str[i])) {
             result += str[i]
         }
+        i++
     }
     return result
 }

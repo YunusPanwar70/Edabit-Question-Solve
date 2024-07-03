@@ -6,13 +6,22 @@
 //     return arr.filter((item) => Number(item))
 // }
 
+// function compact(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]) {
+//             result.push(arr[i])
+//         }
+//     }
+//     return result
+// }
+
 function compact(arr) {
-    let result = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]) {
-            result.push(arr[i])
-        }
-    }
-    return result
+    let result = []
+    for (const key of arr) {
+        key && result.push(key);
+    };
+    return result;
 }
+
 console.log(compact([0, 1, false, 2, "", 3]));  // => [1, 2, 3]

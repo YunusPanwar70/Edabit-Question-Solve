@@ -1,9 +1,11 @@
 // function search(arr, num) {
 //     return arr.findIndex(item => item === num);
 // }
+
 // function search(arr,num) {
 //     return arr.indexOf(num)
 // }
+
 function search(arr, num) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === num) {

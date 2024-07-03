@@ -4,8 +4,16 @@
 // y Number of items contained within each subarray.
 // z Item contained within each subarray.
 
-function matrix(arr) {
-    
+function matrix(x, y, z) {
+    let result = [];
+    for (let i = 0; i < x; i++) {
+        let subarray = [];
+        for (let j = 0; j < y; j++) {
+            subarray.push(z)
+        }
+        result.push(subarray)
+    }
+    return result
 }
 console.log(matrix(3, 2, 3));
 console.log(matrix(2, 1, "edabit"));

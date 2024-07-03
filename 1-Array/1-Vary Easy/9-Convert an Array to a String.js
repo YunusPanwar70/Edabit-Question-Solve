@@ -1,9 +1,11 @@
 // function arrayToString(arr) {
 //     return arr.toString()    
 // }
-function arrayToString(arr) {
-    return arr.join('')
-}
+
+// function arrayToString(arr) {
+//     return arr.join('')
+// }
+
 function arrayToString(arr) {
     let result = '';
     for (let i = 0; i < arr.length; i++) {

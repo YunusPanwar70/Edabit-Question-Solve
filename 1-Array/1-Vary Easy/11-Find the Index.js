@@ -1,6 +1,7 @@
-function findIndex(arr, str) {
-    return arr.indexOf(str)
-}
+// function findIndex(arr, str) {
+//     return arr.indexOf(str)
+// }
+
 function findIndex(arr, str) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === str) {

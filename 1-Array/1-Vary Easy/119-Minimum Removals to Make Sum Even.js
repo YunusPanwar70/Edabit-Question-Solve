@@ -1,7 +1,34 @@
 // Create a function that returns the minimum number of removals to make the sum of all elements in an array even.
+
+// function minimumRemovals(arr) {
+//     const sum = arr.reduce((acc, val) => acc + val)
+//     if (sum % 2 === 0) {
+//         return 0
+//     } else {
+//         return 1
+//     }
+// }
+
+// function minimumRemovals(arr) {
+//     let result = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         result += arr[i];
+//     }
+//     if (result % 2 === 0) {
+//         return 0
+//     } else {
+//         return 1
+//     }
+// }
+
 function minimumRemovals(arr) {
-    const sum = arr.reduce((acc, val) => acc + val)
-    if (sum % 2 === 0) {
+    let count = 0;
+    let i = 0;
+    while (i < arr.length) {
+        count += arr[i]
+        i++
+    }
+    if (count % 2 === 0) {
         return 0
     } else {
         return 1

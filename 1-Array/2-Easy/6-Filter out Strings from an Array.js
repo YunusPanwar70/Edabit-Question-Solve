@@ -1,6 +1,17 @@
 // Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
+
+// function filterArray(arr) {
+//     return arr.filter((item) => typeof item === 'number')
+// }
+
 function filterArray(arr) {
-    return arr.filter((item) => typeof item === 'number')
+    let result = []
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === 'number') {
+            result.push(arr[i])
+        }
+    }
+    return result
 }
 console.log(filterArray([1, 2, "a", "b"]));
 console.log(filterArray([1, "a", "b", 0, 15]));

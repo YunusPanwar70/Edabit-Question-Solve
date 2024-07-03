@@ -1,5 +1,6 @@
 // toArray(), which converts a number to an array of its digits.
 // toNumber(), which converts an array of digits back to its number.
+
 function toArray(arr) {
     return arr.toString().split('').map(Number)
 }

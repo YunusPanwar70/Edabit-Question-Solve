@@ -8,11 +8,11 @@
 
 function chatroomStatus(arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == []) {
+        if (typeof arr[i] === 'undefined') {
             return 'no one online'
         }
         else {
-            return arr[i] + ' online'
+            return `${arr[i]} online`
         }
     }
 };

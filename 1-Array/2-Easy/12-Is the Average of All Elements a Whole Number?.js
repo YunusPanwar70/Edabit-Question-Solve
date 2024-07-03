@@ -1,7 +1,17 @@
 // Create a function that takes an array as an argument and returns true or false depending on whether the average of all elements in the array is a whole number or not.
+
+// function isAvgWhole(arr) {
+//     const sum = arr.reduce((acc, val) => acc + val)
+//     const avg = sum / arr.length;
+//     return Number.isInteger(avg)
+// }
+
 function isAvgWhole(arr) {
-    const sum = arr.reduce((acc, val) => acc + val)
-    const avg = sum / arr.length;
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    let avg = sum / arr.length
     return Number.isInteger(avg)
 }
 console.log(isAvgWhole([1, 3]));

@@ -1,12 +1,25 @@
 // Create a function that takes a string and returns the number (count) of vowels contained within it.
 
+// function countVowels(str) {
+//     let vowels = 'aeiou';
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+
 function countVowels(str) {
     let vowels = 'aeiou';
     let count = 0;
-    for (let i = 0; i < str.length; i++) {
+    let i = 0;
+    while (i < str.length) {
         if (vowels.includes(str[i])) {
             count++
         }
+        i++
     }
     return count
 }

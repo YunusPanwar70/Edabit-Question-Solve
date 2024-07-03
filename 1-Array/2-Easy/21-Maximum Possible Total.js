@@ -1,4 +1,5 @@
 // Given an array of 10 numbers, return the maximum possible total made by summing just 5 of the 10 numbers.
+
 // function maxTotal(arr) {
 //     arr.sort((a, b) => b - a);
 //     let sum = 0;
@@ -7,6 +8,7 @@
 //     }
 //     return sum
 // }
+
 function maxTotal(arr) {
     let sortArr = arr.sort((a, b) => b - a)
     return sortArr.reduce((acc, val) => acc + val)

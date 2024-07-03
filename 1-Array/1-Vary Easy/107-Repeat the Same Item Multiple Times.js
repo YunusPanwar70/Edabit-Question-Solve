@@ -11,7 +11,6 @@ console.log(repeat("edabit", 3));
 console.log(repeat(13, 5));
 console.log(repeat("7", 2));
 console.log(repeat(0, 0));
-
 // ➞ ["edabit", "edabit", "edabit"]
 // ➞ [13, 13, 13, 13, 13]
 // ➞ ["7", "7"]

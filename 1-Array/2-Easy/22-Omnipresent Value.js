@@ -3,6 +3,7 @@
 // [[3, 4], [8, 3, 2], [3], [9, 3], [5, 3], [4, 3]]
 // 3 exists in every element inside this array, so is omnipresent.
 // Create a function that determines whether an input value is omnipresent for a given array.
+
 function isOmnipresent(arr, val) {
     return arr.every((allArray) => allArray.includes(val))
 }

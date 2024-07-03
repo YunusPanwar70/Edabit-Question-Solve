@@ -1,5 +1,15 @@
+// function totalAmountAdjectives(obj) {
+// return Object.values(obj).length;
+// }
+
 function totalAmountAdjectives(obj) {
-    return Object.values(obj).length;
+    let count = 0;
+    let i;
+    for (const key in obj) {
+        key[i] += count
+        count++
+    }
+    return count
 }
 console.log(totalAmountAdjectives({ a: "moron" }));
 console.log(totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" }));

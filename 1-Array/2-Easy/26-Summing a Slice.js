@@ -5,8 +5,18 @@
 // The first 3 numbers in the list are 9, 8 and 7.
 // The sum of these 3 numbers is 24 (9 + 8 + 7).
 // Return the answer.
+
+// function sliceSum(arr, n) {
+//     return arr.slice(0, n).reduce((acc, val) => acc + val, 0)
+// }
+
 function sliceSum(arr, n) {
-    return arr.slice(0, n).reduce((acc, val) => acc + val, 0)
+    let newElement = arr.slice(0, n)
+    let sum = 0;
+    for (let i = 0; i < newElement.length; i++) {
+        sum += newElement[i]
+    }
+    return sum
 }
 console.log(sliceSum([1, 3, 2], 2));
 console.log(sliceSum([4, 2, 5, 7], 4));
