@@ -1,9 +1,19 @@
+// function countCharacters(str) {
+//     let result = [];
+//     for (let i = 0; i < str.length; i++) {
+//         result += str[i]
+//     }
+//     return result.length
+// }
+
 function countCharacters(str) {
-    let a = [];
-    for (let i = 0; i < str.length; i++) {
-        a += str[i]
+    let count = 0;
+    let i = 0;
+    while (i < str.length) {
+        count += str[i].length
+        i++
     }
-    return a.length
+    return count
 }
 console.log(countCharacters(["###", "###", "###"]));
 console.log(countCharacters(["22222222", "22222222",]));

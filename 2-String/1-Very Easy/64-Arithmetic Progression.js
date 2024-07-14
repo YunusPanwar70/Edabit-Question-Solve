@@ -6,12 +6,12 @@
 // Return the first n elements of the sequence with the given common difference diff. The final result should be a string of numbers, separated by comma and space.
 
 function arithmeticProgression(start, diff, n) {
-    let a = [];
-    for (let i = start; i <= diff; i++) {
-        a.push(start)
+    let result = [];
+    for (let i = start; i < n; i++) {
+        result.push(start)
         start += diff
     }
-    return a.join(' ')
+    return result.join(', ')
 }
 console.log(arithmeticProgression(1, 2, 5));
 console.log(arithmeticProgression(1, 0, 5));

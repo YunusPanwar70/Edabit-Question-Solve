@@ -1,7 +1,7 @@
 // Create a function to return the amount of potatoes there are in a string.
 
 function potatoes(str) {
-    str = str.toLowerCase();
+    // str = str.toLowerCase();
     let count = 0;
     let index = 0;
     while (true) {

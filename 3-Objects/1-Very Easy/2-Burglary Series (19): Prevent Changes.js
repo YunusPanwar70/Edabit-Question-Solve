@@ -7,7 +7,6 @@ const obj = { noChanges: true }
 
 function preventChanges(obj) {
     Object.freeze(obj)
-    // Write your code here, don't use a return statement
     obj.noChanges = false;
     obj.signature = "whatever"
     return obj;

@@ -2,12 +2,23 @@
 // function countWords(str) {
 // return str.split(" ").length;
 // }
+// function countWords(str) {
+//     let result = 1;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === " ") {
+//             result++
+//         }
+//     }
+//     return result
+// }
 function countWords(str) {
     let result = 1;
-    for (let i = 0; i < str.length; i++) {
+    let i = 0;
+    while (i < str.length) {
         if (str[i] === " ") {
             result++
         }
+        i++
     }
     return result
 }

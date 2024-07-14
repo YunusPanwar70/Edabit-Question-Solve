@@ -7,16 +7,27 @@
 // Hamming Distance: 1 - "b" vs. "d" is the only difference.
 // Create a function that computes the hamming distance between two strings.
 
+// function hammingDistance(a, b) {
+//     let distance = 0;
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] !== b[i]) {
+//             distance++;
+//         }
+//     }
+//     return distance;
+// }
+
 function hammingDistance(a, b) {
     let distance = 0;
-    for (let i = 0; i < a.length; i++) {
+    let i = 0;
+    while (i < a.length) {
         if (a[i] !== b[i]) {
-            distance += 1;
+            distance++
         }
+        i++
     }
-    return distance;
+    return distance
 }
-
 console.log(hammingDistance("abcde", "bcdef"));
 console.log(hammingDistance("abcde", "abcde"));
 console.log(hammingDistance("strong", "strung"));

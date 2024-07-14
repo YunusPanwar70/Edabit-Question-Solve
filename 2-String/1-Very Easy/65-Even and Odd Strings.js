@@ -3,11 +3,11 @@
 function evenOddString(str) {
     let even = "";
     let odd = "";
-let arr = str.split("")
+    let arr = str.split("")
     for (let i = 0; i < arr.length; i++) {
         if (str[i] % 2 === 0) {
             even += str[i]
-        } else  if(str[i]  % 2 !== 0){
+        } else if (str[i] % 2 !== 0) {
             odd += str[i]
         }
     }

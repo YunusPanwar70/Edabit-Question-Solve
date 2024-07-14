@@ -4,10 +4,21 @@
 //     let re = '-';
 //     return re.repeat(n)
 // }
+
+// function Go(n) {
+//     let char = '';
+//     for (let i = 0; i < n; i++) {
+//         char += '-'
+//     }
+//     return char
+// }
+
 function Go(n) {
     let char = '';
-    for (let i = 0; i < n; i++) {
+    let i = 0;
+    while (i < n) {
         char += '-'
+        i++
     }
     return char
 }

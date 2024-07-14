@@ -18,20 +18,22 @@
 //     return arr.filter(Boolean).length
 // }
 
-function countTrue(arr) {
-    let count = 0;
-    let i = 0;
-    while (i < arr.length) {
-        if (arr[i] === true) {
-            count++
-        }
-        i++
-    }
-    return count
-}
-console.log(countTrue([true, false, false, true, false]));
-console.log(countTrue([false, false, false, false]));
-console.log(countTrue([]));
+// function countTrue(arr) {
+//     let count = 0;
+//     let i = 0;
+//     while (i < arr.length) {
+//         if (arr[i] === true) {
+//             count++
+//         }
+//         i++
+//     }
+//     return count
+// }
+// console.log(countTrue([true, false, false, true, false]));
+// console.log(countTrue([false, false, false, false]));
+// console.log(countTrue([]));
 // ➞ 2
 // ➞ 0
 // ➞ 0
+
+
