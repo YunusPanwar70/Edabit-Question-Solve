@@ -1,0 +1,5 @@
+let arr = ['yunus', 'sami', 'salam', 'gullu', { name: 'umer' }];
+let search = arr.some((item) => item.name === 'umer');
+console.log(search);
+// includes => hamesha primitve data type ko check karta hai 
+// some => ka use kar ke array our Object check kar sakhte hai

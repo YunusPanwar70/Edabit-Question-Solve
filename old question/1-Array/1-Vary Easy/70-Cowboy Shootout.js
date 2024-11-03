@@ -19,6 +19,7 @@ function rogerShots(arr) {
         if (arr[i] === 'Bang!' || arr[i] === 'BangBang!') {
             count++;
         }
+        i++
     }
     return count / 2
 }

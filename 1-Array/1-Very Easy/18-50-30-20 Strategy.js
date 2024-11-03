@@ -2,8 +2,20 @@
 
 // Given the after-tax income as ati, what you are supposed to do is to make a function that will return an object that shows how much a person needs to spend on needs, wants, and savings.
 
-function fiftyThirtyTwenty(n) {
+// function fiftyThirtyTwenty(n) {
+//     let obj = {
+//         Need: n * 0.5,
+//         Want: n * 0.3,
+//         Saving: n * 0.2
+//     }
+//     return obj
+// }
 
+function fiftyThirtyTwenty(arr) {
+    const Need = arr * 0.5;
+    const Wants = arr * 0.3;
+    const Savings = arr * 0.2;
+    return { Need, Wants, Savings }
 }
 console.log(fiftyThirtyTwenty(10000));
 console.log(fiftyThirtyTwenty(50000));
