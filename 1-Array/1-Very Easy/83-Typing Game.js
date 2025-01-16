@@ -13,27 +13,37 @@
 // return arr1.map((word, index) => word === arr2[index] ? 1 : -1)
 // }
 
-function correctStream(arr1, arr2) {
-    let result = [];
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] === arr2[i]) {
-            result.push(1)
-        } else {
-            result.push(-1)
-        }
-    }
-    return result
-}
-console.log(correctStream(
-    ["it", "is", "find"],
-    ["it", "is", "fine"]
-));
-console.log(correctStream(
-    ["april", "showrs", "bring", "may", "flowers"],
-    ["april", "showers", "bring", "may", "flowers"]
-));
+// function correctStream(arr1, arr2) {
+//     let result = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] === arr2[i]) {
+//             result.push(1)
+//         } else {
+//             result.push(-1)
+//         }
+//     }
+//     return result
+// }
+// console.log(correctStream(
+//     ["it", "is", "find"],
+//     ["it", "is", "fine"]
+// ));
+// console.log(correctStream(
+//     ["april", "showrs", "bring", "may", "flowers"],
+//     ["april", "showers", "bring", "may", "flowers"]
+// ));
 // ➞ [1, 1, -1]
 // ➞ [1, -1, 1, 1, 1]
 
 // Notes
 // The input array lengths will always be the same.
+
+
+
+const a = Symbol('a');
+const b = a;
+const obj = {
+  [a]:1,
+  [b]:2
+};
+console.log(obj);

@@ -1,8 +1,8 @@
 // Create a function that counts how many D's are in a sentence.
 
 function countDs(str) {
-    let regEx = /[d]/gi;
-    return str.match(regEx).length
+    let regex = /d/gi;
+    return str.match(regex).length;
 }
 console.log(countDs("My friend Dylan got distracted in school."));
 console.log(countDs("Debris was scattered all over the yard."));
